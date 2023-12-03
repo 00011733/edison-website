@@ -11,6 +11,7 @@ const receivers = [
   "957597889", // Asilbek
   "875072364", // Me
   "977986028", // Jahongir
+  "-4049587102", // Group
 ];
 const chatId = "875072364";
 const btnAdd = document.getElementById("add_button");
