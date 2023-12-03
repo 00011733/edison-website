@@ -25,12 +25,6 @@ a {
   letter-spacing: 1px;
 }
 
-.nw-layout {
-}
-
-.nw-layout-container {
-}
-
 .nw-logo-text {
   font-size: 36px !important;
   color: var(--mainColor);
@@ -87,8 +81,11 @@ a {
   transition-duration: 0.4s;
 }
 
-.nw-btn-call-back:hover {
+.nw-btn-call-back:hover,
+.nw-btn-call-back:active,
+.nw-btn-call-back:focus {
   background: #fff;
+  border: 1px solid var(--mainColor);
   box-shadow: 0px 2px 20px 10px #97b1bf;
   color: #000;
 }

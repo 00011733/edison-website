@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="./css/animate.css" />
 
@@ -93,7 +94,7 @@
                 </li>
               </ul>
               <!-- Language selection -->
-              <div class="btn-group nw-language-selection">
+              <!-- <div class="btn-group nw-language-selection">
                 <button
                   type="button"
                   class="btn dropdown-toggle"
@@ -101,7 +102,6 @@
                   aria-expanded="false"
                 >
                   <img src="./images/uzb.svg" width="30" alt="ru" />
-                  <!-- <span>Ru</span> -->
                 </button>
                 <ul class="dropdown-menu">
                   <li>
@@ -125,8 +125,8 @@
                     >
                   </li>
                 </ul>
-              </div>
-              <a class="btn nw-btn-call-back" href="tel:+998956291111">
+              </div> -->
+              <a class="btn nw-btn-call-back" href="tel:+998956281111">
                 Qo'ng'iroq qilish
               </a>
             </div>
@@ -153,9 +153,7 @@
                     gacha chegirmaga ega bo'ling!
                   </p>
                   <p>
-                    <a
-                      href="tel:+998956291111"
-                      class="btn btn-primary px-4 py-3 mt-3"
+                    <a href="#contacts" class="btn btn-primary px-4 py-3 mt-3"
                       >Hoziroq bog'lanish!</a
                     >
                   </p>
@@ -180,9 +178,7 @@
                   </h1>
                   <p>Hoziroq sinov darsiga yoziling!</p>
                   <p>
-                    <a
-                      href="tel:+998956291111"
-                      class="btn btn-primary px-4 py-3 mt-3"
+                    <a href="#contacts" class="btn btn-primary px-4 py-3 mt-3"
                       >Hoziroq bog'lanish!</a
                     >
                   </p>
@@ -828,55 +824,51 @@
             </div>
             <div class="row d-flex align-items-stretch no-gutters">
               <div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
-                <form>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Ismingiz"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Telefon raqamingiz"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Mavzu"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="7"
-                      class="form-control"
-                      placeholder="Xabar"
-                    ></textarea>
-                  </div>
-                  <div class="form-group">
-                    <button
-                      type="button"
-                      class="btn btn-primary py-3 px-5"
-                      onclick="alertUser(`Afsuski, ma'lumot jo'natib bo'lmaydi, biz bilan bog'lanish uchun pasda ko'rsatilgan telefon raqamlarga qo'ngiroq qiling.`)"
-                    >
-                      Xabarni jo'natish
-                    </button>
-                  </div>
-                </form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ismingiz"
+                    id="name"
+                    name="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Telefon raqamingiz"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="7"
+                    class="form-control"
+                    placeholder="Xabar"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <input
+                    value="Xabarni jo'natish"
+                    id="add_button"
+                    type="button"
+                    class="btn btn-primary py-3 px-5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  />
+                </div>
               </div>
               <div class="col-md-6 d-flex align-items-stretch">
                 <!-- <div id="map"></div> -->
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1782.8518045979051!2d69.24933579202313!3d41.27867281569291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b3ee6dfeaf3%3A0xe81409a515ff5a66!2z0JzRg9C60LjQvNC40LkgMTc!5e0!3m2!1sru!2s!4v1701523822478!5m2!1sru!2s"
                   width="600"
-                  height="600"
+                  height="500"
                   style="border: 0"
                   allowfullscreen=""
                   loading="lazy"
@@ -964,13 +956,13 @@
                       <li>
                         <a href="tel:+998974409770"
                           ><span class="icon icon-phone"></span
-                          ><span class="text">+998 (97) 440-97-70</span></a
+                          ><span class="text">+998 (95) 440-97-70</span></a
                         >
                       </li>
                       <li>
                         <a href="tel:+998956291111"
                           ><span class="icon icon-phone"></span
-                          ><span class="text">+998 (95) 629-11-11</span></a
+                          ><span class="text">+998 (95) 628-11-11</span></a
                         >
                       </li>
                       <li>
@@ -1026,12 +1018,9 @@
                   <ul
                     class="ftco-footer-social list-unstyled float-md-left float-lft mt-3"
                   >
-                    <!-- <li class="ftco-animate">
-                      <a href="#"><span class="icon-twitter"></span></a>
-                    </li>
                     <li class="ftco-animate">
-                      <a href="#"><span class="icon-facebook"></span></a>
-                    </li> -->
+                      <a href="https://t.me/edison_academy_uz"><span class="icon-telegram"></span></a>
+                    </li>
                     <li class="ftco-animate">
                       <a href="https://instagram.com/edison.academy.uz"
                         ><span class="icon-instagram"></span
@@ -1082,6 +1071,34 @@
       </svg>
     </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title text-success" id="exampleModalLabel">Xabar muvaffaqiyatli jo'natildi!</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center" style="flex-direction: column; padding: 4rem 2rem;">
+            <img src="./images//success.png" class="mb-5" width="150" alt="success">
+            <h5 class="text-center">Xabar muvaffaqiyatli jo'natildi!</h5>
+            <p class="text-center">Tez orada siz bilan operatorlarimiz bog'lanishadi.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
@@ -1097,6 +1114,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./backend/firebase.js"></script>
+    <script src="./backend/tgSender.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
