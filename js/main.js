@@ -38,7 +38,7 @@ AOS.init({
 
   var carousel = function () {
     $(".home-slider").owlCarousel({
-      loop: true,
+      loop: false,
       autoplay: true,
       margin: 0,
       animateOut: "fadeOut",
@@ -153,7 +153,7 @@ AOS.init({
       }
     });
   };
-  scrollWindow();
+  //   scrollWindow();
 
   var counter = function () {
     $("#section-counter").waypoint(
