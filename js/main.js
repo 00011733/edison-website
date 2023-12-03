@@ -153,7 +153,7 @@ AOS.init({
       }
     });
   };
-  //   scrollWindow();
+    scrollWindow();
 
   var counter = function () {
     $("#section-counter").waypoint(
