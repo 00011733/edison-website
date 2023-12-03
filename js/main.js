@@ -153,7 +153,7 @@ AOS.init({
       }
     });
   };
-    scrollWindow();
+  scrollWindow();
 
   var counter = function () {
     $("#section-counter").waypoint(
@@ -173,7 +173,7 @@ AOS.init({
                 number: num,
                 numberStep: comma_separator_number_step,
               },
-              7000
+              5000
             );
           });
         }
