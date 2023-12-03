@@ -620,22 +620,22 @@
         };
       t.default = a;
     },
-    // function (e, t) {
-    //   "use strict";
-    //   Object.defineProperty(t, "__esModule", { value: !0 });
-    //   var n = function (e) {
-    //     for (
-    //       var t = 0, n = 0;
-    //       e && !isNaN(e.offsetLeft) && !isNaN(e.offsetTop);
+    function (e, t) {
+      "use strict";
+      Object.defineProperty(t, "__esModule", { value: !0 });
+      var n = function (e) {
+        for (
+          var t = 0, n = 0;
+          e && !isNaN(e.offsetLeft) && !isNaN(e.offsetTop);
 
-    //     )
-    //       (t += e.offsetLeft - ("BODY" != e.tagName ? e.scrollLeft : 0)),
-    //         (n += e.offsetTop - ("BODY" != e.tagName ? e.scrollTop : 0)),
-    //         (e = e.offsetParent);
-    //     return { top: n, left: t };
-    //   };
-    //   t.default = n;
-    // },
+        )
+          (t += e.offsetLeft - ("BODY" != e.tagName ? e.scrollLeft : 0)),
+            (n += e.offsetTop - ("BODY" != e.tagName ? e.scrollTop : 0)),
+            (e = e.offsetParent);
+        return { top: n, left: t };
+      };
+      t.default = n;
+    },
     function (e, t) {
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 });
