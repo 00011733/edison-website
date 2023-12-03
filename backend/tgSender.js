@@ -7,6 +7,11 @@
 }
 let messageOrder = 1;
 const token = "6227607314:AAGdd6aJokc_u6bgtNBwdnK-vidOWQbDWWA";
+const receivers = [
+  "957597889", // Asilbek
+  "875072364", // Me
+  "977986028", // Jahongir
+];
 const chatId = "875072364";
 const btnAdd = document.getElementById("add_button");
 let nameEl = document.querySelector("#name");
@@ -33,22 +38,25 @@ $(document).ready(function () {
     msg = msg === "" ? "---" : msg;
     const txt = `🔔 Yangi xabar\n\n📌 Xabar raqami: #${messageOrder}\n\n****************\nIsm: ${name}\nTel raqam: ${phone}\nXabar: ${msg}\n\n****************`;
 
-    $.ajax({
-      type: "POST",
-      url: `https://api.telegram.org/bot${token}/sendMessage`,
-      data: {
-        chat_id: chatId,
-        text: txt,
-        parse_mode: "html",
-      },
-      success: function (res) {
-        console.debug(res);
-        $("#response").text("Message sent");
-      },
-      error: function (error) {
-        console.error(error);
-        alert("error failed");
-      },
-    });
+    for (let r of receivers) {
+      console.log(r);
+      $.ajax({
+        type: "POST",
+        url: `https://api.telegram.org/bot${token}/sendMessage`,
+        data: {
+          chat_id: r,
+          text: txt,
+          parse_mode: "html",
+        },
+        success: function (res) {
+          console.debug(res);
+          $("#response").text("Message sent");
+        },
+        error: function (error) {
+          console.error(error);
+          //   alert("error failed");
+        },
+      });
+    }
   }
 });
