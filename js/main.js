@@ -116,7 +116,7 @@
 	var scrollWindow = function() {
 		$(window).scroll(function(){
 			var $w = $(this),
-					st = $w.scrollTop(),
+					// st = $w.scrollTop(),
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
 
