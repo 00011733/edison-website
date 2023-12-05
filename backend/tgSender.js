@@ -11,7 +11,7 @@ const receivers = [
   "957597889", // Asilbek
   "875072364", // Me
   "977986028", // Jahongir
-  //   "-4049587102", // Group
+  "-4049587102", // Group
   "-1002020282417", // Zayavka Channel
 ];
 const chatId = "875072364";
