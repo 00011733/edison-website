@@ -823,7 +823,7 @@
               </div>
             </div>
             <div class="row d-flex align-items-stretch no-gutters ed-contact-container">
-              <div class="col-md-6 p-4 p-md-5 order-md-last bg-light ed-contact-wrapper">
+              <form method="post" name="contact-form" action="" class="col-md-6 p-4 p-md-5 order-md-last bg-light ed-contact-wrapper">
                 <div class="form-group required">
                   <label for="name" class="label">Ismingiz</label>
                   <input
@@ -860,13 +860,11 @@
                   <input
                     value="Ariza qoldirish"
                     id="add_button"
-                    type="button"
+                    type="submit"
                     class="btn btn-primary py-3 px-5"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
                   />
                 </div>
-              </div>
+              </form>
               <div class="col-md-6 d-flex align-items-stretch">
                 <!-- <div id="map"></div> -->
                 <iframe
@@ -1119,8 +1117,9 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="./backend/firebase.js"></script>
-    <script src="./backend/tgSender.js"></script>
+    <!-- <script src="./backend/firebase.js"></script> -->
+    <!-- <script src="./backend/tgSender.js"></script> -->
     <script src="./js/app.js"></script>
+    <script src="./backend/googleSheets.js"></script>
   </body>
 </html>
